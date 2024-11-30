@@ -1,4 +1,7 @@
 window.onload = () => {
+  document.getElementById('goToQuotes')
+    .addEventListener('click', () => window.open('./quotes.html'));
+
   let exchangeRates = {'USD':'107', 'EUR':'114', 'RUB':'1'};
 
   fetch('https://iss.moex.com/iss/statistics/engines/currency/markets/selt/rates.json?iss.meta=off')

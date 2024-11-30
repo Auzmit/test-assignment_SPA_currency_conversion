@@ -3,13 +3,15 @@ body{
   grid-template-columns: repeat(2, max-content);
   grid-template-rows: repeat(2, max-content);
   grid-template-areas:
-    "inputValue cur1"
-    "convertedResult cur2";
+    'inputValue      cur1'
+    'convertedResult cur2'
+    'goToQuotes      .   ';
+  gap: 5px;
 
   width: 15vw;
   height: 30vh;
-  margin: auto;
-  margin-top: 10vh;
+  margin-left: 30vw;
+  margin-top: 10%;
 
   color: #fff;
   font: 18px/1.5 JetBrainsMono, monospace;
@@ -31,6 +33,11 @@ body{
 
 #currency2 {
   grid-area: cur2;
+}
+
+#goToQuotes {
+  grid-area: goToQuotes;
+  height: 35px;
 }
 
 #inputValue,
